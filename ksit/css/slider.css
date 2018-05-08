@@ -1,0 +1,39 @@
+.c-carousel img {
+  display: block;
+  height: 100px;
+  width:150px;
+  padding:20px;
+  margin-right: 10px;
+}
+
+.c-carousel {
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.c-carousel__arrow {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -75%;
+ 
+  z-index: 1;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  background-color: #333333;
+}
+.c-carousel__arrow--left {
+  left: 15px;
+}
+.c-carousel__arrow--right {
+  right: 15px;
+}
+.c-carousel__slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  will-change: transform;
+}
